@@ -1,0 +1,14 @@
+{
+  "name": "john_fernandez_portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio website for John Fernandez",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_portfolio"
+  },
+  "author": "John Fernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
