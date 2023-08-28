@@ -4,11 +4,18 @@
   "description": "A portfolio website for John Fernandez",
   "main": "index.js",
   "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
     "test": "test_portfolio"
   },
   "author": "John Fernandez",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
