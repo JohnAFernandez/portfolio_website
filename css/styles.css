@@ -1,12 +1,12 @@
-@Font-face {
+/*@Font-face {
     font-family: PixelOperatorBold;
-    src: url('/font/PixelOperator-Bold.ttf');
+    src: url('font/PixelOperator-Bold.ttf');
 }
 
 @Font-face {
     font-family: PixelOperator;
-    src: url('/font/PixelOperator.ttf');
-}
+    src: url('font/PixelOperator.ttf');
+}*/
 
 header {
     opacity: 0.94;
@@ -40,7 +40,7 @@ header {
 }
 
 body {
-    background-image: url('/res/background.png');
+    background-image: url('res/background.png');
 /*    background-color: linear-gradient(90deg,#929BA0, #778188); */
     color: #041a2e;
     background-attachment: fixed;
