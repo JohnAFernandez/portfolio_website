@@ -39,7 +39,7 @@ header {
     padding-right: 20px;
 }
 
-body {
+.body_ {
     background-image: url('res/background.png');
 /*    background-color: linear-gradient(90deg,#929BA0, #778188); */
     color: #041a2e;
@@ -51,7 +51,7 @@ a {
     color: #041a2e;
 }
 
-h1 h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     color: #041a2e;
 }
 
@@ -59,7 +59,7 @@ h1 h2, h3, h4, h5 {
     margin-top: 15px;
 }
 
-footer {
+.footer_ {
     margin-top: 40px;
     margin-right: 0px;
     background-color: #f6fafe;
