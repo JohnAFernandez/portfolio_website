@@ -19,6 +19,7 @@ header {
 .container {
     background-color: #f6fafe;
     opacity: 0.91;
+    margin-left: 0px;
     margin-right: 0px;
     padding-left: 40px;
 }
@@ -29,15 +30,17 @@ header {
     padding-top: 40px;
     padding-left: 70px;
     padding-bottom: 30px;
+    padding-right: 0px;
 }
 
 .body-container {
     margin-bottom: 20px;
-    margin-left: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-right: 100px;
     padding-bottom: 20px;
-    padding-right: 20px;
-}
+    padding-right: 40px;
+}  
 
 .body_ {
     background-image: url('res/background.png');
@@ -53,6 +56,14 @@ a {
 
 h1, h2, h3, h4, h5 {
     color: #041a2e;
+}
+
+h3 {
+    padding-left: 5px;
+}
+
+h4 {
+    padding-right: 20px;
 }
 
 .body-img {
@@ -74,5 +85,5 @@ h1, h2, h3, h4, h5 {
 
 .li-body {
     margin-bottom: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
 }
