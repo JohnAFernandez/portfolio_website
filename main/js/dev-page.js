@@ -8,9 +8,10 @@ function toggleProjects(id){
       console.log(element.style.display);
       if (id === containers[x]){
         const extra_space = document.getElementById("extra-space");
-        
+
         if (element.style.display === 'none') {
           element.style.display = '';
+          element.style.borderWidth = "5px";
           extra_space.style.display = 'none';
         } else {
           element.style.display = 'none';
