@@ -1,4 +1,4 @@
-const containers = ["cpp-container", "sql-container", "rust-container", "csharp-container", "python-container", "github-container", "web-container"];
+const containers = ["cpp-container", "sql-container", "rust-container", "csharp-container", "python-container", "github-container", "web-container", "blurb-container"];
 
 function toggleProjects(id){
   for (let x = 0; x < containers.length; x++){
@@ -7,10 +7,14 @@ function toggleProjects(id){
     if (element){
       console.log(element.style.display);
       if (id === containers[x]){
+        const extra_space = document.getElementById("extra-space");
+        
         if (element.style.display === 'none') {
           element.style.display = '';
+          extra_space.style.display = 'none';
         } else {
           element.style.display = 'none';
+          extra_space.style.display = '';
         }
       } else {
         element.style.display = 'none';

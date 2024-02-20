@@ -29,7 +29,7 @@
           <div class="col-1"></div>
           <div class="col">
             <h4>
-              Leveraging the Cloud to Create a Flawless User Experience
+              Creating Flawless User Experiences
             </h4>
           </div>
         </div>
@@ -80,6 +80,7 @@
       </div>
       <div class="p-2"></div>
     </div>
+    <br>
     <div class="d-flex justify-content-around">
       <div class="p-2"></div>
       <div class="p-2 image-button rounded" onclick="toggleProjects('python-container')">
@@ -112,9 +113,21 @@
           />
         </button>
       </div>
+      <div class="p-2 image-button rounded">
+        <button class="btn" onclick="toggleProjects('blurb-container')">
+          <img
+            alt="Blurb"
+            width="65"
+            height="65"
+            src="main/res/iconmonstr-info-9-240.png"
+          />
+        </button>
+      </div>
       <div class="p-2"></div>
     </div>
-    
+
+    <br>
+
     <div id="csharp-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
@@ -150,8 +163,6 @@
         </div>
       </div>
     </div>
-
-    <br>
 
     <div id="rust-container"  class="container body-container rounded">
       <div class="row">
@@ -394,7 +405,39 @@
       </div>
     </div>
 
+    <div id="blurb-container" style="display: none;" class="container body-container rounded">
+      <div class="row">
+        <div class="col-2 col-med-1">
+          <img
+            alt="Summary"
+            class="body-img"
+            width="65"
+            height="65"
+            src="main/res/iconmonstr-info-9-240.png"
+          />
+        </div>
+        <div class="col">
+          <br />
+          <h3>
+            I'm John Fernandez, versatile developer, specializing in intuitive, feature-rich, and stable user experiences.
+          </h3>
+          <ul class="list-unstyled">
+            <li class="li-body">Focused on removing user pain points and creating intuitive features</li>
+            <li class="li-body">Conscious of edge cases and code flow</li>
+            <li class="li-body">Experienced in providing clear instructions to users, even within technical error messages</li>
+            <li class="li-body">Five years cumulative experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <div id="extra-space">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
     <footer class="footer_">
       <div class="conatiner">
         <div class="row">
@@ -470,7 +513,7 @@
     <script src="main/js/dev-page.js"></script>
     <script>
       // This doubles as an init function if none of the elements match
-      toggleProjects("NONE");
+      toggleProjects("blurb-container");
     </script>
   </body>
 </html>
