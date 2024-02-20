@@ -70,6 +70,16 @@ h4 {
     margin-top: 15px;
 }
 
+.image-button {
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f6fafe;
+    opacity: 0.91;    
+}
+
 .footer_ {
     margin-top: 40px;
     margin-right: 0px;

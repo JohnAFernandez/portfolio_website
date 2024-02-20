@@ -36,13 +36,92 @@
       </div>
     </header>
 
-    <div class="container body-container rounded">
+    <div class="d-flex justify-content-around">
+      <div class="p-2"></div>
+      <div class="p-2 image-button rounded">
+        <button class="btn" onclick="toggleProjects('csharp-container')">
+          <img
+            alt="C# Projects"
+            width="65"
+            height="65"
+            src="main/res/csharpicon.png"
+          />
+        </button>
+      </div>
+      <div class="p-2 image-button rounded" onclick="toggleProjects('rust-container')">
+        <button class="btn">
+          <img
+            alt="Rust Projects"
+            width="65"
+            height="65"
+            src="main/res/rust-icon2.png"
+          />
+        </button>
+      </div>
+      <div class="p-2 image-button rounded">
+        <button class="btn" onclick="toggleProjects('sql-container')">
+          <img
+            alt="SQL Projects"
+            width="65"
+            height="65"
+            src="main/res/sql icon.png"
+          />
+        </button>
+      </div>
+      <div class="p-2 image-button rounded">
+        <button class="btn" onclick="toggleProjects('cpp-container')">
+          <img
+            alt="C++ Projects"
+            width="65"
+            height="65"
+            src="main/res/c++ icon.png"
+          />
+        </button>
+      </div>
+      <div class="p-2"></div>
+    </div>
+    <div class="d-flex justify-content-around">
+      <div class="p-2"></div>
+      <div class="p-2 image-button rounded" onclick="toggleProjects('python-container')">
+        <button class="btn">
+          <img
+            alt="Python Projects"
+            width="65"
+            height="65"
+            src="main/res/Python_logo-512.webp"
+          />
+        </button>
+      </div>
+      <div class="p-2 image-button rounded">
+        <button class="btn" onclick="toggleProjects('web-container')">
+          <img
+            alt="Web Development"
+            width="65"
+            height="65"
+            src="main/res/iconmonstr-globe-thin.svg"
+          />
+        </button>
+      </div>
+      <div class="p-2 image-button rounded">
+        <button class="btn" onclick="toggleProjects('github-container')">
+          <img
+            alt="Github Workflow Projects"
+            width="65"
+            height="65"
+            src="main/res/github-icon.png"
+          />
+        </button>
+      </div>
+      <div class="p-2"></div>
+    </div>
+    
+    <div id="csharp-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
             alt="C# Projects"
             class="body-img"
-            width="58"
+            width="65"
             height="65"
             src="main/res/csharpicon.png"
           />
@@ -72,7 +151,9 @@
       </div>
     </div>
 
-    <div class="container body-container rounded">
+    <br>
+
+    <div id="rust-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
@@ -114,7 +195,7 @@
     </div>
 
 
-    <div class="container body-container rounded">
+    <div id="sql-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
@@ -172,7 +253,7 @@
     </div>
 
 
-    <div class="container body-container rounded">
+    <div id="cpp-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
@@ -224,7 +305,7 @@
     </div>
 
 
-    <div class="container body-container rounded">
+    <div id="python-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
@@ -258,7 +339,7 @@
     </div>    
 
 
-    <div class="container body-container rounded">
+    <div id="github-container"  class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
@@ -285,7 +366,7 @@
       </div>
     </div>
 
-    <div class="container body-container rounded">
+    <div id="web-container" class="container body-container rounded">
       <div class="row">
         <div class="col-2 col-med-1">
           <img
@@ -386,5 +467,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="main/res/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main/js/dev-page.js"></script>
+    <script>
+      // This doubles as an init function if none of the elements match
+      toggleProjects("NONE");
+    </script>
   </body>
 </html>
