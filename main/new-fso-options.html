@@ -11,7 +11,7 @@
     <!-- Fonts and css-->
     <link rel="stylesheet" href="res/fonts/pixel_operator/PixelOperator.ttf" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>FSO Table Option Submission Form</title>
+    <title>FSO Table Option Editor</title>
   </head>
 
   <body class="body_" style="background-image: url('res/background.png')">
@@ -19,7 +19,7 @@
       <div class="container header-container">
         <div class="row">
           <div class="col-5-med">
-            <h2>FSO Table Option Submission Form</h2>
+            <h2>FSO Table Option Editor</h2>
           </div>
         </div>
       </div>
@@ -29,30 +29,56 @@
       <br />
       <div class="row">
         <div class="col-3 col-med-1">
-          <h3>Instructions:</h3>
+          <h5>Instructions:</h3>
         </div>
         <div class="col-9 col-med-8">
-          <h4>Use this form to submit table option documentation for the options used in Freespace Open.</h4>
+          <h5>Use this form to submit table option documentation changes for table options used in Freespace Open.</h4>
         </div>
       </div>
-      <br />
-      <br />      
+    </div>
+    <div class="container body-container rounded">      
       <div class="row">
         <div class="col-10">
-          <br />
-          <ul class="list-unstyled">
-            <li class="li-body">
-              Parent Table:
-              <br />
-              
-            </li>
-            <li class="li-body">
-              Fixed button classes and changed app color palette
-            </li>
-            <li class="li-body">
-              Debugged and Fixed multiple other issues
-            </li>
+          <br>
+          <h4>Table:
+          <button class="btn dropdown-toggle" type="button" data-toggle='dropdown' id="table-selection" aria-expanded="false">          
+            <i>&lt;none&gt;</i>
+          </button>              
+          </h4>
+          <ul class="dropdown-menu" aria-labelledby="table-selection">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
+        <br>
+        <br>
+        
+        </div>
+
+      </div>
+      <!--Test for layout-->
+      <div class="row">
+        <div class="col-2">
+          $ITEMNAMEOFDOOM:
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+          DATATYPE
+        </div>
+        <div class="col-2">
+          No Restrictions
+        </div>
+        <div class="col-2">
+          Parent: $ParentEntry
+        </div>
+        <!-- Would only be enabled if they are logged in-->
+        <button class="btn btn-primary">
+          Edit
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          DESCRIPTION: TABLE TABLE TABLE LOREM IPSUM IS SO NICE!
         </div>
       </div>
     </div>
@@ -128,8 +154,8 @@
     </footer>-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="res/bootstrap/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="res/bootstrap/js/popper.min.js"></script>
     <script src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
